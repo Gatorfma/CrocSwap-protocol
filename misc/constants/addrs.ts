@@ -54,6 +54,30 @@ const emptyAddrs: CrocAddrs = {
     deployer: "",
     govern: emptryGovAddrs
 }
+const sepolia: CrocAddrs = {
+    dex: "0x9502FaC55A5D6E791115a5238679d24DF39d3dBc",
+    cold: "0xAa454a2dA646C986C5CF4356616Ca7BD3AD4C2db",
+    warm: "0x9b6765DF80e577460ba26DC698b8eC0ab809d2A4",
+    long: "0x2496E52eB2caf996c4563D86793F5355012c6b47",
+    micro: "0x69Bcd8AAc7D88D8DfBaF5C5a134F0273670cB455",
+    hot: "0xc1D8E3c54B60F6b8f8F557219cfE2438b2cBdCe9",
+    knockout: "0xDEE9D547bC5d2f643157C5dd6dC0bf6B8A2C2A60",
+    koCross: "0x3E4770c3D80c5B1F0ad1a2624057DFA24B9EacF5",
+    policy: "0x2E1f7f1464A6660583C84C2068be4d261de1d54F",
+    query: "0x444708653b558a5affdA68f35Fc2e8F25Ad7AC4F",
+    impact: "0x354E02f6d60107D4025aA25cF430CA55660E74CC",
+    shell: "",
+    policyShell: "",
+    deployer: "0x17b5a28b502e845fAEffE483E3e716D136977Bd8",
+    govern: {
+        multisigTreasury: "0xEb5DcCaaD810f67cEeB25c415C62d1b5E9A408CC",
+        multisigOps: "0xEb5DcCaaD810f67cEeB25c415C62d1b5E9A408CC",
+        multisigEmergency: "0xEb5DcCaaD810f67cEeB25c415C62d1b5E9A408CC",
+        timelockTreasury: "",
+        timelockOps: "",
+        timelockEmergency: ""
+    }
+}
 
 // Mock used in local forks
 const mockAddrs: CrocAddrs = {
@@ -151,6 +175,7 @@ export let CROC_ADDRS = {
     '0x1': mainnetAddrs,
     '0x5': goerliAddrsDryRun,
     'mock': mockAddrs,
+    '0xAA36A7': sepolia,
 }
 
 // Goerli
@@ -159,12 +184,16 @@ export let TOKEN_ADDRS = {
         eth: ethers.constants.AddressZero,
         dai: "0xdc31Ee1784292379Fbb2964b3B9C4124D8F89C60",
         usdc: "0xD87Ba7A50B2E7E660f678A895E4B72E7CB4CCd9C"
+    },
+    '0xAA36A7':{
+        eth: ethers.constants.AddressZero,
     }
 }
 
 export let POOL_IDXS = {
     '0x5': 36000,
-    '0x1': 420
+    '0x1': 420,
+    '0xAA36A7': 36000
 }
 
 export const BOOT_PROXY_IDX = 0;

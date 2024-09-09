@@ -32,40 +32,45 @@ module.exports = {
     },
 
     networks: {
-       local: {
-         url: 'http://127.0.0.1:8545',
-         chainId: 31337
-       },
-       ropsten: {
-         url: 'https://ropsten.infura.io/v3/cf3bc905d88d4f248c6be347adc8a1d8',
-         chainId: 3,
-         accounts: ["0x7c5e2cfbba7b00ba95e5ed7cd80566021da709442e147ad3e08f23f5044a3d5a"]
-       },
-       rinkeby: {
-         url: 'https://rinkeby.infura.io/v3/cf3bc905d88d4f248c6be347adc8a1d8',
-         chainId: 4,
-         accounts: ["0x7c5e2cfbba7b00ba95e5ed7cd80566021da709442e147ad3e08f23f5044a3d5a"]
-       },
-       kovan: {
-        url: 'https://kovan.infura.io/v3/cf3bc905d88d4f248c6be347adc8a1d8',
-        chainId: 42,
-        accounts: ["0x7c5e2cfbba7b00ba95e5ed7cd80566021da709442e147ad3e08f23f5044a3d5a"]
-      },
-      goerli: {
-        url: 'https://goerli.infura.io/v3/cf3bc905d88d4f248c6be347adc8a1d8',
-        chainId: 5,
-        accounts: ["0x7c5e2cfbba7b00ba95e5ed7cd80566021da709442e147ad3e08f23f5044a3d5a"]      
-      },
-      mainnet: {
-        url: 'https://mainnet.infura.io/v3/360ea5fda45b4a22883de8522ebd639e',
-        chainId: 1
-      },
+      //  local: {
+      //    url: 'http://127.0.0.1:8545',
+      //    chainId: 31337
+      //  },
+      //  ropsten: {
+      //    url: 'https://ropsten.infura.io/v3/cf3bc905d88d4f248c6be347adc8a1d8',
+      //    chainId: 3,
+      //    accounts: ["0x7c5e2cfbba7b00ba95e5ed7cd80566021da709442e147ad3e08f23f5044a3d5a"]
+      //  },
+      //  rinkeby: {
+      //    url: 'https://rinkeby.infura.io/v3/cf3bc905d88d4f248c6be347adc8a1d8',
+      //    chainId: 4,
+      //    accounts: ["0x7c5e2cfbba7b00ba95e5ed7cd80566021da709442e147ad3e08f23f5044a3d5a"]
+      //  },
+      //  kovan: {
+      //   url: 'https://kovan.infura.io/v3/cf3bc905d88d4f248c6be347adc8a1d8',
+      //   chainId: 42,
+      //   accounts: ["0x7c5e2cfbba7b00ba95e5ed7cd80566021da709442e147ad3e08f23f5044a3d5a"]
+      // },
+      // goerli: {
+      //   url: 'https://goerli.infura.io/v3/cf3bc905d88d4f248c6be347adc8a1d8',
+      //   chainId: 5,
+      //   accounts: ["0x7c5e2cfbba7b00ba95e5ed7cd80566021da709442e147ad3e08f23f5044a3d5a"]      
+      // },
+      // mainnet: {
+      //   url: 'https://mainnet.infura.io/v3/360ea5fda45b4a22883de8522ebd639e',
+      //   chainId: 1
+      // },
 
+      // fuji: {
+      //   url: "https://api.avax-test.network/ext/bc/C/rpc",
+      //   chainId: 43113,
+      // },
 
-      fuji: {
-        url: "https://api.avax-test.network/ext/bc/C/rpc",
-        chainId: 43113,
-      },
+      sepolia:{
+        url:"https://rpc.sepolia.org",
+        chainId: 11155111,
+        accounts:["0x1f83b7b34cfa00734e0dd77eab99de95ab83939130df031de1327e00b0ff4f14"]
+      }
 
     }
 };

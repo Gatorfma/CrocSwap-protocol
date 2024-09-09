@@ -4,6 +4,7 @@ import { ethers } from "hardhat"
 import { CrocAddrs, CROC_ADDRS } from "../constants/addrs";
 import { CrocPoolParams, CROC_POOL_PARAMS } from "../constants/poolParams";
 import { RPC_URLS } from "../constants/rpcs";
+import "dotenv/config"
 
 export async function traceContractDeploy 
     (deployTx: Promise<Contract>, tag: string): Promise<Contract> {
@@ -59,7 +60,8 @@ export async function refContract (contractName: string, addr: string,
 export function initChain (chainId?: string): 
     { wallet: Wallet, addrs: CrocAddrs, chainId: string, poolParams: CrocPoolParams } {
 
-    chainId = chainId || process.env.CHAIN_ID || 'mock';
+    // chainId = chainId || process.env.CHAIN_ID || 'mock';
+    chainId = "0xAA36A7"
     const addrs = CROC_ADDRS[chainId as keyof typeof CROC_ADDRS]
     const rpcUrl = RPC_URLS[chainId as keyof typeof RPC_URLS]
     const poolParams = CROC_POOL_PARAMS[chainId as keyof typeof CROC_POOL_PARAMS]
@@ -74,7 +76,8 @@ export function initChain (chainId?: string):
 export function initProvider (chainId?: string): 
     { addrs: CrocAddrs, provider: Provider, chainId: string, poolParams: CrocPoolParams } {
 
-    chainId = chainId || process.env.CHAIN_ID || 'mock';
+    // chainId = chainId || process.env.CHAIN_ID || 'mock';
+    chainId = "0xAA36A7"
     const addrs = CROC_ADDRS[chainId as keyof typeof CROC_ADDRS]
     const rpcUrl = RPC_URLS[chainId as keyof typeof RPC_URLS]
     const poolParams = CROC_POOL_PARAMS[chainId as keyof typeof CROC_POOL_PARAMS]

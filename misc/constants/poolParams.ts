@@ -36,4 +36,5 @@ const goerliDryRunParams = mainnetParams
 export const CROC_POOL_PARAMS = {
     '0x1': mainnetParams,
     '0x5': goerliDryRunParams,
+    '0xEb5DcCaaD810f67cEeB25c415C62d1b5E9A408CC': goerliDryRunParams
 }
